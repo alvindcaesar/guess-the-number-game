@@ -15,9 +15,9 @@ end
 # Game Start
 puts "Welcome To Guess The Number Challenge!"
 sleep 2
-print "Initializing"
-loading_dots
-
+# print "Initializing"
+# loading_dots
+puts rand_num
 puts "Let the game begin. What is your name?"
 name = gets.chomp()
 name = name.capitalize()
@@ -30,12 +30,12 @@ while guess_count < 10
   guess_count = guess_count + 1
   guess_rmng = (10 - guess_count)
 
-
   if guess < rand_num
     puts "Sorry #{name}, your guess is way lower. You have #{guess_rmng} guess remaining. "
   elsif guess > rand_num
     puts "Sorry #{name}, your guess is way higher. You have #{guess_rmng} guess remaining. "
   end
+
 break if guess == rand_num
 end
 

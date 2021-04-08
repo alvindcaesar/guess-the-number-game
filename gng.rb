@@ -42,6 +42,3 @@ end
 if guess == rand_num
   puts "Congratulations #{name}! #{rand_num} is the correct answer. You guess the number just in #{guess_count} tries."
 end
-
-puts "Want to play again?"
-ask = gets.chomp

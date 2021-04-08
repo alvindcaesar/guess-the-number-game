@@ -40,5 +40,5 @@ break if guess == rand_num
 end
 
 if guess == rand_num
-  puts "Congratulations #{name}! #{rand_num} is the correct answer. You guess the number just in #{guess_count} tries."
+  puts "Congratulations #{name}! #{rand_num} is the correct answer. You guess the number just in #{guess_count} attempts."
 end
